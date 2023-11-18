@@ -1,0 +1,21 @@
+{{define "base"}}
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+    <title>{{template "title" .}} - Yammy</title>
+</head>
+
+<body class="w-full h-full bg-black text-white scrollbar-hide">
+    {{template "header" .}}
+    <main>
+        {{template "main" .}}
+    </main>
+    {{template "nav" .}}
+</body>
+
+</html>
+{{end}}

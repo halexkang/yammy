@@ -1,0 +1,22 @@
+{{define "post"}}
+<div>
+    <div class="flex items-center justify-between">
+        <div class="flex items-center">
+            <img class="object-cover rounded-full h-10 w-10" src="static/img/{{ .UserImg }}" alt="profile">
+            <div class="ml-2 font-semibold text-sm">{{ .UserName }}</div>
+        </div>
+    </div>
+    <div class="relative flex w-full">
+        <div class="absolute ml-5 my-2 h-[calc(100%-16px)] bg-gray-500 w-px"></div>
+        <div class="ml-12 mr-2 flex-col w-full">
+            <div class="py-1">{{ .Title }}</div>
+            <img class="object-cover rounded-xl w-full" src="static/img/{{ .PostImg }}" alt="foodpic">
+            <div class="mt-2">
+                <i class="material-symbols-outlined pl-2">favorite</i>
+                <i class="material-symbols-outlined pl-2">bookmark</i>
+                <i class="material-symbols-outlined pl-2">comment</i>
+            </div>
+        </div>
+    </div>
+</div>
+{{end}}
